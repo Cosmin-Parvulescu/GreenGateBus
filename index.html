@@ -65,9 +65,7 @@
       }
     }
 
-    $(function() {
-      generate_timetables();
-
+    function update_li_classes() {
       $('#unirii_greengate_timetable li').each(function() {
         var el = $(this);
         var el_moment = moment(el.html(), 'HH:mm');
@@ -85,6 +83,11 @@
           el.addClass('before');
         }
       });
+    }
+
+    $(function() {
+      generate_timetables();
+      update_li_classes();
     });
   </script>
 </body>
