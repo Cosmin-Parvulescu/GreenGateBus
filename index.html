@@ -48,9 +48,8 @@
 
       for (var i = 0; i < unirii_greengate.length; i++) {
         var li_element = $('<li></li>')
-        var inner_li_element = $('<span>' + unirii_greengate[i].format('HH:mm') + '</span>')
+        li_element.append(unirii_greengate[i].format('HH:mm'));
 
-        li_element.append(inner_li_element);
         timetable_element.append(li_element);
       }
     }
@@ -60,9 +59,8 @@
       
       for (var i = 0; i < greengate_unirii.length; i++) {
         var li_element = $('<li></li>')
-        var inner_li_element = $('<span>' + greengate_unirii[i].format('HH:mm') + '</span>')
+        li_element.append(greengate_unirii[i].format('HH:mm'));
 
-        li_element.append(inner_li_element);
         timetable_element.append(li_element);
       }
     }
