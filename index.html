@@ -88,6 +88,11 @@
     $(function() {
       generate_timetables();
       update_li_classes();
+      
+      // Update li classes every 5 seconds
+      setInterval(function() {
+        update_li_classes();
+      }, 5000);
     });
   </script>
 </body>
