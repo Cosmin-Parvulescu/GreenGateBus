@@ -3,23 +3,35 @@
 <head>
   <meta charset="utf-8">
   <title>Cum merg autobuzele</title>
+
   <style>
-  table {
-    border-collapse: collapse;
-  }
-  table, th, td {
-    border: 1px solid black;
-  }
-  .hour {
-    font-weight: bold;
-  }
+    .timetable {
+      margin: 0;
+      padding: 0;
+    }
+
+    .timetable li {
+      display: inline-block;
+
+      list-style-type: none;
+      
+      margin: 5px;
+      padding: 10px 25px;
+
+      font-size: 1.5em;
+    }
+
+    .before {
+      font-style: italic;
+      color: #CCC;
+    }
   </style>
 </head>
 <body>
   <div>
     <h2>De la Unirii la Green Gate</h2>
 
-    <ul id="unirii_greengate_timetable">
+    <ul id="unirii_greengate_timetable" class="timetable">
       <!-- Content will be added dynamically here -->
     </ul>
   </div>
@@ -27,7 +39,7 @@
   <div>
     <h2>De la Greengate la Unirii</h2>
 
-    <ul id="greengate_unirii_timetable">
+    <ul id="greengate_unirii_timetable" class="timetable">
       <!-- Content will be added dynamically here -->
     </ul>
   </div>
